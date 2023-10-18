@@ -1,19 +1,16 @@
-name: My Workflow
+name: MY FIRST GITHUB ACTION
 
 on:
   push:
     branches:
-       main
+       - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Run a script
-      run: 
-        echo "Hello, GitHub Actions!"
+       - uses: actions/checkout@v2
+       - name: Echo Github Actions
+         run: echo "Hello world to GITHUB ACTIONS"
 
