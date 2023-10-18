@@ -5,6 +5,12 @@ on:
     branches:
        - master
 
+env:
+  NAME: "ABIODUN ADEBISI"
+  PROFESSION: "DATA ENTHUSIAST $ MENTAL HEALTH ADVOCATE"
+  PASSION: "STUDYING"
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +18,7 @@ jobs:
     steps:
        - uses: actions/checkout@v2
        - name: Echo Github Actions
-         run: echo "Hello world to GITHUB ACTIONS"
+         run: echo "Hi, this is $NAME. I am a $PROFESSION by profession and $PASSION my passion"
   post-build:
     runs-on: ubuntu-latest
     steps:
